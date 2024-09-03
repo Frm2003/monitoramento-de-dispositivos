@@ -1,3 +1,47 @@
 {
-  "extends": "next/core-web-vitals"
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["prettier", "@typescript-eslint"],
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "space-in-parens": "off",
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": [["builtin", "external", "internal"]],
+                "newlines-between": "always"
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 0,
+                "maxBOF": 0
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+    }
 }
