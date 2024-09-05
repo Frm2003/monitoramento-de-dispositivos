@@ -1,0 +1,49 @@
+.layout * {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.layout {
+    margin-top: 0.5em;
+}
+
+.layout .title {
+    align-items: center;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0.5em;
+    width: 90%;
+}
+
+.layout .title button:first-child {
+    background: none;
+    border: none;
+    color: #4393f7;
+    padding: 0.5em 0.75em;
+}
+
+.layout .title button:last-child {
+    background: none;
+    border: none;
+    color: #ac2e2d;
+    padding: 0.5em 0.75em;
+}
+
+.layout article ul {
+    list-style: none;
+    height: 400px;
+    margin: auto;
+    overflow-y: scroll;
+    width: 80%;
+}
+
+.layout article ul li {
+    margin: 0.75em 0;
+}

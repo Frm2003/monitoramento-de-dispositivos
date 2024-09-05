@@ -1,0 +1,57 @@
+.layout * {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.layout ul {
+    list-style-type: none;
+    height: 300px;
+    margin: auto;
+    overflow-y: scroll;
+    width: 90%;
+}
+
+.layout ul li {
+    margin: 0.75em 0;
+    overflow: hidden;
+}
+
+.layout ul li div:first-child {
+    float: left;
+    overflow-x: scroll;
+    width: 70%;
+    white-space: nowrap;
+}
+
+.layout ul li div:last-child {
+    float: right;
+    text-align: end;
+    width: 30%;
+}
+
+.layout ul li h3 {
+    font-size: 15px;
+}
+
+.layout ul li p {
+    font-size: 12px;
+    padding: 0.25em 0;
+}
+
+.layout ul li button {
+    background: rgb(13, 151, 214);
+    border: none;
+    padding: 0.5em 0.75em;
+}
+
+@media screen and (min-width: 1600px) {
+    .layout .layout ul li div:first-child {
+        overflow-x: hidden;
+        white-space: unset;
+    }
+}

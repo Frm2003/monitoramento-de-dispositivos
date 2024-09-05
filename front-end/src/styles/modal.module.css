@@ -1,0 +1,66 @@
+/*MODAL 1*/
+.layout * {
+    box-sizing: border-box;
+    border-spacing: 0;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.layout {
+    align-items: center;
+    animation-duration: 0.25s;
+    animation-name: slideDown;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.layout h2 {
+    margin: 0.5em 0;
+}
+
+.layout .body {
+    background: rgba(33, 32, 32, 1);
+    border-radius: 10px;
+    padding: 1em;
+    margin: auto;
+    width: 80%;
+}
+
+.layout input[type='file'] {
+    display: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .layout .body {
+        width: 18%;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        margin-top: -300%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: -300%;
+    }
+}
