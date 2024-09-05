@@ -26,6 +26,12 @@ O front-end foi desenvolvido em ```next.js 14```, há uma camada de estilos, uma
 
 Para o banco estou utilizando PostgreSQL.
 
+### Diagrama de classe 
+
+demonstração de como está a disposição das classes.
+
+![diagrama de classe](./assets/assets.jpg)
+
 ## Começando
 
 É necessário instalar o programa nmap security para realizar uma varredura na rede local. segue o link do programa <a href="https://nmap.org/download#windows">clique aqui</a>
