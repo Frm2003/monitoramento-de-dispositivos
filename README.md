@@ -64,7 +64,19 @@ Certifique-se de que todas as dependências necessárias estão instaladas. Use 
 
 ### iniciando o front-end
 
-Primeiro, inicie o servidor de desenvolvimento:
+Primeiro, instale as dependencias com:
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+```
+
+depois inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
